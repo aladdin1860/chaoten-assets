@@ -145,12 +145,19 @@
       ).matches;
 
 
-    if (standalone) {
+if (standalone) {
+
+  setTimeout(
+    function() {
 
       window.location.replace(
         freshStartUrl()
       );
-    }
+
+    },
+    1500
+  );
+}
 
   </script>
 
